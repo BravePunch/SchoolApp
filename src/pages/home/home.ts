@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, MenuController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +7,7 @@ import { NavController, MenuController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public menuCtrl: MenuController) {
-      this.menuCtrl.swipeEnable(true);
+  constructor(public navCtrl: NavController) {
   }
 
 }

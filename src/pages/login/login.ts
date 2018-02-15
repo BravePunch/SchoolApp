@@ -43,6 +43,7 @@ export class LoginPage {
     this.auth.login(this.credentials).subscribe(
       allowed => {
         if (allowed) {
+          this.menuCtrl.swipeEnable(true);
           this.navCtrl.setRoot(HomePage);
         } else {
           this.showError("Invalid Credentials");

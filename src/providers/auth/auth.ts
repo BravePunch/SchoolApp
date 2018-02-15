@@ -26,8 +26,8 @@ export class AuthProvider {
     } else {
       return Observable.create(observer => {
         // TODO: Vérification par serveur
-        let access = (credentials.password === "password" && credentials.email === "email");
-        this.currentUser = new User('Guest', 'e@mail.com');
+        let access = (credentials.password === "pass" && credentials.email === "email");
+        this.currentUser = new User('Jean-Claude', 'DUCE', 'e@mail.com');
         observer.next(access);
         observer.complete();
       });
