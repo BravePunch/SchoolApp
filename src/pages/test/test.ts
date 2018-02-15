@@ -8,8 +8,14 @@ import { NavController } from 'ionic-angular';
 
 export class TestPage {
 
+  testData = {};
+
   constructor(public navCtrl: NavController) {
 
+    this.testData = {
+      msg: "Message"
+    }
+
   }
-  
+
 }
